@@ -8,6 +8,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
+import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
+import android.support.v4.content.PermissionChecker;
 
 
 import io.flutter.plugin.common.MethodCall;
@@ -49,7 +54,7 @@ public class FileOpenerPlugin implements MethodCallHandler
 
     public static void registerWith(Registrar registrar) {
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "open_file");
-        OpenFilePlugin plugin = new OpenFilePlugin(registrar.context(), registrar.activity());
+        FileOpenerPlugin plugin = new FileOpenerPlugin(registrar.context(), registrar.activity());
         channel.setMethodCallHandler(plugin);
         registrar.addRequestPermissionsResultListener(plugin);
         registrar.addActivityResultListener(plugin);
