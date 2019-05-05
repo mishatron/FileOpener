@@ -1,8 +1,8 @@
 name: file_opener
 description: Plugin alows to open file with external app
 version: 0.0.1
-author:
-homepage:
+author: Mishatron <mishatron98@gmail.com>
+homepage: https://github.com/mishatron/FileOpener
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
