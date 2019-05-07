@@ -3,14 +3,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'file_opener'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'Plugin alows to open file with external app'
   s.description      = <<-DESC
 Plugin alows to open file with external app
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/mishatron/FileOpener'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Mishatron' => 'mishatron98@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
